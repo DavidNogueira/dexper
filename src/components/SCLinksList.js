@@ -8,6 +8,8 @@ const SCLinksListStyled = styled.div`
   margin-left: 20px;
   line-height: 1.6rem;
   text-decoration: none;
+  overflow: auto;
+  max-height:360px;
 `;
 
 export function SCLinksList({ children }) {
