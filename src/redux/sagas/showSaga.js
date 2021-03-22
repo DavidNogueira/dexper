@@ -3,7 +3,7 @@ import * as type from "../types";
 import Service from "../../services";
 
 
-
+//fetch Show and episodes sequentially
 function* fetchShow() {
   try {
     const data = yield call(Service.fetchShow);

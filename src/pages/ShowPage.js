@@ -11,7 +11,7 @@ import { SCLinksList } from "../components/SCLinksList";
 import { SCCard } from "../components/SCCard";
 import theme from "../theme/themeX";
 
-//Business logic
+//Group by
 function groupBy(arr, key) {
   const episodes = arr?.reduce(function (rv, x) {
     (rv[x[key]] = rv[x[key]] || []).push(x);
@@ -59,6 +59,7 @@ export default function ShowPage() {
     // Loading component
     return <div>LOADING...</div>;
   }
+  
   if (!isObjectEmpty(error)) {
     // Error component for ex: a red snackBar
     return <div>ERROR {error}</div>;

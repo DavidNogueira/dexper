@@ -55,8 +55,14 @@ export default function DetailPage(props) {
         <>
           <SCButton onClick={back}>Go back</SCButton>
           <div>{detail.name}</div>
-          <div>{detail.summary && parse(detail.summary)}</div>
-          <div style={{display:"flex", justifyContent:'center'}}>
+          <div>
+            {detail.summary ? (
+              parse(detail.summary)
+            ) : (
+              <div>No description available</div>
+            )}
+          </div>
+          <div style={{ display: "flex", justifyContent: "center" }}>
             <SCCoverBackground bgImage={detail.image?.medium} alt="ppg" />
           </div>
         </>

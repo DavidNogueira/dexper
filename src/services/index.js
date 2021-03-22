@@ -1,10 +1,10 @@
 
-const GOT = "Game of Thrones";
-// const PPG = "Powerpuff Girls";
+// const GOT = "Game of Thrones";
+const PPG = "Powerpuff Girls";
 
 const Service = {
   fetchShow() {
-    return fetch(`https://api.tvmaze.com/singlesearch/shows?q=${GOT}`)
+    return fetch(`https://api.tvmaze.com/singlesearch/shows?q=${PPG}`)
       .then((res) => res.json())
       .catch((err) => {
         throw err;
